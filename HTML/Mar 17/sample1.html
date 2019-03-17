@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Enter Username:
+        <input type="text" name="username" />
+        <br/> <br/>
+        Enter password:
+        <input type="password" name="userpass" />
+        <br/> <br/>
+        Select country:
+        <select name="country">
+            <option value="pak">Pakistan</option>
+            <option value="us">USA</option>
+            <option value="ksa">KSA</option>
+        </select>
+        <br/> <br/>
+        Select colors:
+        <select name="selectedColor" multiple>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="orange">Orange</option>
+            <option value="green">Green</option>
+
+        </select>
+        <br/> <br/>
+        Pofile picture:
+        <input type="file" name="ppic" />
+        <br/> <br/>
+
+        <input type="image" src="myImg.png" height="180" width="300"/>
+        <br/> <br/>
+
+        Select Gender:
+        <!-- 
+            Wrap whole input element with text
+         -->
+        <label>
+            <input type="radio" value="male" name="gender"/> Male
+        </label>
+        
+        <!-- Assign id in the form element and put attr "for" in label -->
+        <input type="radio" id="femaleVal" value="female" name="gender"/> 
+        <label for="femaleVal">Female</label>
+
+        <br/> <br/>
+
+        <input type="submit" value="Done" />
+
+    </form>
+</body>
+</html>
