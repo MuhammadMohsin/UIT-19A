@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Courier New';
+        }
+
+      /* Child Selector */
+      /* li > a {
+        color: green;
+      } */
+
+      /* Descendant Selector */
+      /* li a {
+        color: green;
+      } */
+
+      /* Adjacent Sibling Selector */
+      /* .imp+li {
+        color: green;
+      } */
+
+    /* General Sibling Selector */
+    .imp~li {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a> Link 1</a></li>
+      <li class="imp"><a> Link 2</a></li>
+      <li><a> Link 3</a></li>
+      <li><a> Link 4</a></li>
+      <li>
+          <span><a> Link 5</a></span>
+        </li>
+    </ul>
+  </body>
+</html>
